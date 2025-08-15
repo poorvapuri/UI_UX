@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: navy;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        img {
+    display: block;         /* Makes image a block element */
+    margin: 0 auto;  
+   border: 10px solid cornflowerblue;      /* Auto left/right margin centers it */
+    border-radius: 8px;       /* Rectangle shape */
+}
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+          margin-top: 15px;
+        }
+        table, th, td {
+            border: 3px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: square;
+        }
+        footer {
+            background-color:navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        mark {
+            background-color: peachpuff;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><u>My Portfolio</u></h1>
+        <h3><em>Turning Ideas into Reality</em></h3>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2> 
+       
+        <p>My name is <b>Poorva Puri</b>.I am currently pusuing Computer Engineering from <i>Thapar Institutr of Engineering and Technology </i>. 
+            I am a passionate <mark>web developer</mark> with a keen interest in 
+           creating <strong>modern and user-friendly</strong> websites. I believe in continuous learning
+           and adapting to new technologies.</p>
+       <img src="img.jpg" alt="My Profile Picture" title="Poorva Puri" width="200" height="220" alignment="center"> 
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td rowspan="2">B.Tech in Computer Engineering</td>
+                <td>Thapar Institute of Engineering and Technology</td>
+                <td>2023 - 2027</td>
+            </tr>
+            <tr>
+                <td colspan="2">Specialization: Fullstack Development</td>
+            </tr>
+            <tr>
+                <td>12th Grade</td>
+                <td>Yadavindra Public School Patiala</td>
+                <td>2021</td>
+             
+            </tr>
+        </table>
+    </section>
+   
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C/C++</li>
+            <li>Node.js with Express.js</li>            
+            <li>Machine Learning</li>
+            <li>Database Management (SQL,PostgreSQL,MongoDB)</li>
+            <li>Version Control (Git, GitHub)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p><strong>Portfolio Website:</strong> Designed and developed my personal portfolio. 
+           <a href="https://github.com/username" target="_blank">View on GitHub</a></p>
+        <p><strong>Weather App:</strong> A real-time weather application using API integration. 
+           <a href="https://linkedin.com/in/username" target="_blank">More Details</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">My LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/username" target="_blank">My GitHub</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by John Doe</p>
+    </footer>
+
+</body>
+</html>
