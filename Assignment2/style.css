@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;   /* pushes footer to the bottom */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #1E90FF;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+nav {
+  margin: 0; padding: 10px;
+  background: #FFD700;
+  text-align: center;
+}
+nav a {
+  color: black;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+.container {
+  width: 80%; margin: 20px auto;
+}
+table {
+  width: 100%; border-collapse: collapse; margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ccc; padding: 10px; text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%; border-radius: 10px;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+form input, form select, form textarea {
+  width: 100%; padding: 8px; margin: 10px 0;
+  border: 1px solid #ccc; border-radius: 5px;
+}
+button {
+  background: #FFD700; color: black; padding: 10px 20px;
+  border: none; border-radius: 5px; cursor: pointer;
+}
+button:hover { background: #c9ab00; }
+footer {
+  background: #1E90FF; 
+  color: white;
+  text-align: center;
+   padding: 15px;
+   margin-top: 20px;
+}
+
