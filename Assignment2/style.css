@@ -11,22 +11,23 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
+  font-size: large;
   margin: 0; padding: 0;
   background: #f9f9f9;
 }
 header {
-  background: #1E90FF;
-  padding: 15px;
+  background: #a6d1fd;
+  padding: 0.25em 0;
   text-align: center;
-  color: white;
+  color: rgb(52, 52, 52);
 }
 nav {
   margin: 0; padding: 10px;
-  background: #FFD700;
+  background: #ffe867;
   text-align: center;
 }
 nav a {
-  color: black;
+  color: rgb(52, 52, 52);
   margin: 0 15px;
   text-decoration: none;
 }
@@ -64,8 +65,8 @@ button {
 }
 button:hover { background: #c9ab00; }
 footer {
-  background: #1E90FF; 
-  color: white;
+  background: #a6d1fd; 
+  color: rgb(52, 52, 52);
   text-align: center;
    padding: 15px;
    margin-top: 20px;
