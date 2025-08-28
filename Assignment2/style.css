@@ -1,16 +1,30 @@
 html, body {
-  height: 100%;       /* make body stretch full height */
-  margin: 0;          /* remove browser default margin */
+  height: 100%;      
+  margin: 0;         
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* ensures page fills viewport */
+  min-height: 100vh;  
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asadphoto-457882.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.3; 
+  z-index: -1;
 }
 
 main {
-  flex: 1;            /* this grows to push footer down */
+  flex: 1;           
 }
 
 footer {
@@ -77,4 +91,8 @@ button {
 }
 button:hover { background: #c9ab00; }
 
-
+.no-style {
+  list-style: none;   
+  padding: 0;        
+  margin: 0;          
+}
