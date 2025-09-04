@@ -12,9 +12,6 @@ body {
 }
 
 
-/* Header / Nav */
-
-
 header h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -25,7 +22,7 @@ header p {
   font-size: 1.2rem;
 }
 
-/* Navigation */
+
 nav {
   background: #222;
   padding: 8px;
@@ -60,44 +57,16 @@ nav a:hover {
 .container{
   padding: 40px 20px;
   max-width: 1000px;
-  text-align: left;
-  
-  
+  text-align: left;  
 }
 
-/* Content container */
-.event-container{
-  
+
+.event-container{  
   padding: 40px 20px;
    color: #222;
   text-align: center;
 }
 
-/* Events Cards */
-.event-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.event-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 20px;
-  transition: transform 0.3s;
-}
-
-.event-card:hover {
-  transform: translateY(-5px);
-}
-
-.event-card h3 {
-  margin-bottom: 10px;
-  color: #ff4757;
-}
-
-/* Table */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -119,7 +88,6 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-/* Form */
 form {
   background: #fff;
   padding: 25px;
@@ -156,7 +124,7 @@ form button {
 }
 
 form button:hover {
-  background: rgb(171, 18, 171);
+  background: rgb(112, 12, 112);
 }
 
 /* Gallery */
