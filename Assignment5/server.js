@@ -5,6 +5,7 @@ const sum = num1 + num2;
 const difference = num1 - num2;
 const product = num1 * num2;
 const quotient = num1 / num2;
+document.write("<br>");
 document.write("Sum: " + sum + "<br>");
 document.write("Difference: " + difference + "<br>");   
 document.write("Product: " + product + "<br>");
@@ -12,12 +13,15 @@ document.write("Quotient: " + quotient + "<br>");
 
 document.write("<br>");
 
-let arr=[10,15,28,5,30];
-document.write("Original Array: " + arr + "<br>");
-arr.sort(function(a, b){return a-b});
-document.write("Sorted Array: " + arr + "<br>");
-document.write("Smallest Number: " + arr[0] + "<br>");
-document.write("Largest Number: " + arr[arr.length - 1] + "<br>");
+
+let a=[10,15,28,5,30];
+document.write("Original Array: " + a + "<br>");
+a.sort(function(a, b){return a-b});
+document.write("Sorted Array: " + a + "<br>");
+document.write("Smallest Number: " + a[0] + "<br>");
+document.write("Largest Number: " + a[a.length - 1] + "<br>");
+document.write("<br>");
+
 
 function validateForm(){
     const name=document.getElementById("name").value;
@@ -55,26 +59,26 @@ document.write("Student Class: " + student.class + "<br>");
 document.write("Student Grades: " + student.grades + "<br>");
 
 document.write("<br>");
- function processArray(arr) {
       
-      let evens = arr.filter(function(num) {
-        return num % 2 === 0;
-      });
+function processArray(arr) {
+  let evens = arr.filter(function(num) {
+    return num % 2 === 0;
+  });
+  let doubled = evens.map(function(num) {
+    return num * 2;
+  });
+  let sum = doubled.reduce(function(total, num) {
+    return total + num;
+  }, 0);
+  return { evens, doubled, sum };
+}
 
-     
-      let doubled = evens.map(function(num) {
-        return num * 2;
-      });
+// ✅ Define array
+const arr = [1, 2, 3, 4, 5, 6];
+const result = processArray(arr);
 
-      
-      let sum = doubled.reduce(function(total, num) {
-        return total + num;
-      }, 0);
-
-      return sum;
-    }
-    const result = processArray(arr);
-
-    document.getElementById("output").textContent =
-      "Original: " + arr + "\n" +
-      "Final Sum: " + result;
+document.getElementById("output").innerHTML =
+  "Original Array: " + arr.join(", ") + "<br>" +
+  "Even Numbers: " + result.evens.join(", ") + "<br>" +
+  "Doubled Evens: " + result.doubled.join(", ") + "<br>" +
+  "Final Sum: " + result.sum;
