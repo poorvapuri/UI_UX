@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;      
+  margin: 0;         
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asadphoto-457882.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.3; 
+  z-index: -1;
+}
+
+main {
+  flex: 1;           
+}
+
+footer {
+  width: 100%;
+  background: #a6d1fd;
+  color: rgb(52, 52, 52);
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #a6d1fd;
+  padding: 0.25em 0;
+  text-align: center;
+  color: rgb(52, 52, 52);
+}
+nav {
+  margin: 0; padding: 10px;
+  background: #ffe867;
+  text-align: center;
+}
+nav a {
+  color: rgb(52, 52, 52);
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+.container {
+  width: 80%; margin: 20px auto;
+}
+table {
+  width: 100%; border-collapse: collapse; margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ccc; padding: 10px; text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%; border-radius: 10px;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+form input, form select, form textarea {
+  width: 100%; padding: 8px; margin: 10px 0;
+  border: 1px solid #ccc; border-radius: 5px;
+}
+button {
+  background: #FFD700; color: black; padding: 10px 20px;
+  border: none; border-radius: 5px; cursor: pointer;
+}
+button:hover { background: #c9ab00; }
+
+.no-style {
+  list-style: none;   
+  padding: 0;        
+  margin: 0;          
+}
