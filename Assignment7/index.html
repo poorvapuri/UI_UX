@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <style>
+    *{
+        text-align: center;
+    }
+    .completed { 
+        text-decoration: line-through; 
+        color: gray;
+        background-color: gray;
+     }
+    .task { border: 2px solid black; 
+        padding: 10px; 
+        margin: 5px 0; 
+        border-radius: 5px;
+    }
+    #description{
+        width: 50%;
+        height:50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>To-Do List</h1>
+
+  
+  <input id="title" placeholder="Task Title">
+  <br>
+  <br>
+  <input id="description" placeholder="Task Description">
+  <br>
+  <br>
+  <button onclick="addTask()">Add Task</button>
+
+  <div id="taskList"></div>
+
+  <script src="script.js"> </script>
+</body>
+</html>
