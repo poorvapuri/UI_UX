@@ -17,7 +17,7 @@ function addTask(){
     let completeBtn=document.createElement("button");
     completeBtn.textContent="Complete";
     completeBtn.onclick=function(){
-        toggleComplete(title,desc,completeBtn);
+        toggleComplete(taskDiv, completeBtn);
     };
 
     let editBtn=document.createElement("button")
@@ -36,10 +36,11 @@ function addTask(){
   document.getElementById("description").value = "";
 }
 
-function toggleComplete(title,desc,btn){
-    title.classList.toggle("completed");
-    desc.classList.toggle("completed");
-    btn.textContent=btn.textContent==="Complete" ? "Undo" : "Complete";
+function toggleComplete(taskDiv, btn){
+    // Toggle the completed class on the whole task container so we can style
+    // the box and text consistently from CSS.
+    taskDiv.classList.toggle("completed");
+    btn.textContent = btn.textContent === "Complete" ? "Undo" : "Complete";
 }
 
 function deleteTask(taskDiv){
@@ -73,3 +74,4 @@ function editTask(taskDiv,title,desc,btn){
         btn.textContent = "Edit";
     }
 }
+
